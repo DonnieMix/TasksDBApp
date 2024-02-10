@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B51BF4512AEF420E0066420F /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4502AEF420E0066420F /* MainAppView.swift */; };
+		B51BF4532AEF42BF0066420F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4522AEF42BF0066420F /* LoginView.swift */; };
+		B51BF4562AEF46CF0066420F /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = B51BF4552AEF46CF0066420F /* KeychainAccess */; };
+		B51BF4582AEFD28C0066420F /* AppKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4572AEFD28C0066420F /* AppKeychain.swift */; };
+		B51BF45A2AEFD54A0066420F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4592AEFD54A0066420F /* NetworkService.swift */; };
+		B51BF45C2AF0005E0066420F /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF45B2AF0005E0066420F /* KeychainService.swift */; };
+		B51BF45E2AF001CF0066420F /* SecureTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF45D2AF001CF0066420F /* SecureTaskListView.swift */; };
+		B51BF4602AF002EB0066420F /* SecureTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF45F2AF002EB0066420F /* SecureTask.swift */; };
+		B51BF4622AF00E600066420F /* BiometricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4612AF00E600066420F /* BiometricsService.swift */; };
+		B51BF4642AF010D70066420F /* SecureTasksListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51BF4632AF010D70066420F /* SecureTasksListObservable.swift */; };
+		B52FC4662AE3F77500198009 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FC4652AE3F77500198009 /* NotificationService.swift */; };
+		B52FC4692AE4152600198009 /* AppDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FC4682AE4152600198009 /* AppDelegateExtension.swift */; };
+		B5AF947D2AD962130035C214 /* TasksDBAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF947C2AD962130035C214 /* TasksDBAppApp.swift */; };
+		B5AF947F2AD962130035C214 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF947E2AD962130035C214 /* TaskListView.swift */; };
+		B5AF94812AD962130035C214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AF94802AD962130035C214 /* Assets.xcassets */; };
+		B5AF94842AD962130035C214 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5AF94832AD962130035C214 /* Preview Assets.xcassets */; };
+		B5AF94862AD962130035C214 /* CoreDataDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94852AD962130035C214 /* CoreDataDBService.swift */; };
+		B5AF94892AD962130035C214 /* TasksDBApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94872AD962130035C214 /* TasksDBApp.xcdatamodeld */; };
+		B5AF94922AD96C140035C214 /* CoreDataDBServiceObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94912AD96C140035C214 /* CoreDataDBServiceObjectContext.swift */; };
+		B5AF94942AD96CDB0035C214 /* CoreDataDBServiceObjectContextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94932AD96CDB0035C214 /* CoreDataDBServiceObjectContextProtocol.swift */; };
+		B5AF94962AD973470035C214 /* GenericDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94952AD973470035C214 /* GenericDBService.swift */; };
+		B5AF94992AD9B7C30035C214 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B5AF94982AD9B7C30035C214 /* Realm */; };
+		B5AF949B2AD9B7C30035C214 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5AF949A2AD9B7C30035C214 /* RealmSwift */; };
+		B5AF949D2ADD52D00035C214 /* RealmDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF949C2ADD52D00035C214 /* RealmDBService.swift */; };
+		B5AF94A12ADD54DA0035C214 /* RealmTodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94A02ADD54DA0035C214 /* RealmTodoTask.swift */; };
+		B5AF94A52ADD5EB80035C214 /* GenericTodoTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94A42ADD5EB80035C214 /* GenericTodoTask.swift */; };
+		B5AF94AB2ADD945A0035C214 /* TaskDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94AA2ADD945A0035C214 /* TaskDetailedView.swift */; };
+		B5AF94B12ADE06150035C214 /* CoreDataTodoTaskExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF94B02ADE06150035C214 /* CoreDataTodoTaskExtension.swift */; };
+		B5DA677B2AE4171200DD0684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA677A2AE4171200DD0684 /* AppDelegate.swift */; };
+		B5DA677F2AE7DB8500DD0684 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA677E2AE7DB8500DD0684 /* InboxView.swift */; };
+		B5DA67822AE7DC5300DD0684 /* IncomingTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA67812AE7DC5300DD0684 /* IncomingTask.swift */; };
+		B5DA67842AE7DE2000DD0684 /* TaskDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA67832AE7DE2000DD0684 /* TaskDateFormatter.swift */; };
+		B5DA67862AE7E8E200DD0684 /* IncomingTasksObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA67852AE7E8E200DD0684 /* IncomingTasksObservable.swift */; };
+		B5DA67882AE80B0A00DD0684 /* APNsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA67872AE80B0A00DD0684 /* APNsData.swift */; };
+		B5DA678B2AE8384000DD0684 /* TasksListObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DA678A2AE8384000DD0684 /* TasksListObservable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B51BF4502AEF420E0066420F /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		B51BF4522AEF42BF0066420F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B51BF4572AEFD28C0066420F /* AppKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeychain.swift; sourceTree = "<group>"; };
+		B51BF4592AEFD54A0066420F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B51BF45B2AF0005E0066420F /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		B51BF45D2AF001CF0066420F /* SecureTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTaskListView.swift; sourceTree = "<group>"; };
+		B51BF45F2AF002EB0066420F /* SecureTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTask.swift; sourceTree = "<group>"; };
+		B51BF4612AF00E600066420F /* BiometricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricsService.swift; sourceTree = "<group>"; };
+		B51BF4632AF010D70066420F /* SecureTasksListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTasksListObservable.swift; sourceTree = "<group>"; };
+		B52FC4652AE3F77500198009 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B52FC4682AE4152600198009 /* AppDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateExtension.swift; sourceTree = "<group>"; };
+		B5AF94792AD962130035C214 /* TasksDBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksDBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5AF947C2AD962130035C214 /* TasksDBAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksDBAppApp.swift; sourceTree = "<group>"; };
+		B5AF947E2AD962130035C214 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		B5AF94802AD962130035C214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5AF94832AD962130035C214 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5AF94852AD962130035C214 /* CoreDataDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDBService.swift; sourceTree = "<group>"; };
+		B5AF94882AD962130035C214 /* TasksDBApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TasksDBApp.xcdatamodel; sourceTree = "<group>"; };
+		B5AF94912AD96C140035C214 /* CoreDataDBServiceObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDBServiceObjectContext.swift; sourceTree = "<group>"; };
+		B5AF94932AD96CDB0035C214 /* CoreDataDBServiceObjectContextProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDBServiceObjectContextProtocol.swift; sourceTree = "<group>"; };
+		B5AF94952AD973470035C214 /* GenericDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDBService.swift; sourceTree = "<group>"; };
+		B5AF949C2ADD52D00035C214 /* RealmDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBService.swift; sourceTree = "<group>"; };
+		B5AF94A02ADD54DA0035C214 /* RealmTodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTodoTask.swift; sourceTree = "<group>"; };
+		B5AF94A42ADD5EB80035C214 /* GenericTodoTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTodoTask.swift; sourceTree = "<group>"; };
+		B5AF94AA2ADD945A0035C214 /* TaskDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailedView.swift; sourceTree = "<group>"; };
+		B5AF94B02ADE06150035C214 /* CoreDataTodoTaskExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTodoTaskExtension.swift; sourceTree = "<group>"; };
+		B5DA677A2AE4171200DD0684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5DA677E2AE7DB8500DD0684 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		B5DA67812AE7DC5300DD0684 /* IncomingTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingTask.swift; sourceTree = "<group>"; };
+		B5DA67832AE7DE2000DD0684 /* TaskDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDateFormatter.swift; sourceTree = "<group>"; };
+		B5DA67852AE7E8E200DD0684 /* IncomingTasksObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingTasksObservable.swift; sourceTree = "<group>"; };
+		B5DA67872AE80B0A00DD0684 /* APNsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNsData.swift; sourceTree = "<group>"; };
+		B5DA67892AE81F0F00DD0684 /* TasksDBApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TasksDBApp.entitlements; sourceTree = "<group>"; };
+		B5DA678A2AE8384000DD0684 /* TasksListObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListObservable.swift; sourceTree = "<group>"; };
+		B5DA678C2AE8490900DD0684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5AF94762AD962130035C214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AF949B2AD9B7C30035C214 /* RealmSwift in Frameworks */,
+				B5AF94992AD9B7C30035C214 /* Realm in Frameworks */,
+				B51BF4562AEF46CF0066420F /* KeychainAccess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B51BF4442AEF24EE0066420F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B52FC4642AE3F76600198009 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B52FC4652AE3F77500198009 /* NotificationService.swift */,
+				B51BF4592AEFD54A0066420F /* NetworkService.swift */,
+				B51BF45B2AF0005E0066420F /* KeychainService.swift */,
+				B51BF4612AF00E600066420F /* BiometricsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B52FC4672AE4150800198009 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF94B02ADE06150035C214 /* CoreDataTodoTaskExtension.swift */,
+				B52FC4682AE4152600198009 /* AppDelegateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B5AF94702AD962120035C214 = {
+			isa = PBXGroup;
+			children = (
+				B5AF947B2AD962130035C214 /* TasksDBApp */,
+				B5AF947A2AD962130035C214 /* Products */,
+				B51BF4442AEF24EE0066420F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5AF947A2AD962130035C214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF94792AD962130035C214 /* TasksDBApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5AF947B2AD962130035C214 /* TasksDBApp */ = {
+			isa = PBXGroup;
+			children = (
+				B5DA678C2AE8490900DD0684 /* Info.plist */,
+				B5DA67892AE81F0F00DD0684 /* TasksDBApp.entitlements */,
+				B5DA67802AE7DC4500DD0684 /* Model */,
+				B52FC4672AE4150800198009 /* Extension */,
+				B52FC4642AE3F76600198009 /* Service */,
+				B5AF94A92ADD94000035C214 /* Protocol */,
+				B5AF94A82ADD93DD0035C214 /* View */,
+				B5AF949F2ADD548D0035C214 /* Realm */,
+				B5AF949E2ADD54840035C214 /* CoreData */,
+				B5AF947C2AD962130035C214 /* TasksDBAppApp.swift */,
+				B5DA677A2AE4171200DD0684 /* AppDelegate.swift */,
+				B5AF94802AD962130035C214 /* Assets.xcassets */,
+				B5AF94872AD962130035C214 /* TasksDBApp.xcdatamodeld */,
+				B5AF94822AD962130035C214 /* Preview Content */,
+			);
+			path = TasksDBApp;
+			sourceTree = "<group>";
+		};
+		B5AF94822AD962130035C214 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF94832AD962130035C214 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5AF949E2ADD54840035C214 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF94852AD962130035C214 /* CoreDataDBService.swift */,
+				B5AF94912AD96C140035C214 /* CoreDataDBServiceObjectContext.swift */,
+				B5AF94932AD96CDB0035C214 /* CoreDataDBServiceObjectContextProtocol.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B5AF949F2ADD548D0035C214 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF949C2ADD52D00035C214 /* RealmDBService.swift */,
+				B5AF94A02ADD54DA0035C214 /* RealmTodoTask.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		B5AF94A82ADD93DD0035C214 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF947E2AD962130035C214 /* TaskListView.swift */,
+				B5AF94AA2ADD945A0035C214 /* TaskDetailedView.swift */,
+				B5DA677E2AE7DB8500DD0684 /* InboxView.swift */,
+				B51BF4502AEF420E0066420F /* MainAppView.swift */,
+				B51BF4522AEF42BF0066420F /* LoginView.swift */,
+				B51BF45D2AF001CF0066420F /* SecureTaskListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5AF94A92ADD94000035C214 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF94952AD973470035C214 /* GenericDBService.swift */,
+				B5AF94A42ADD5EB80035C214 /* GenericTodoTask.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B5DA67802AE7DC4500DD0684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5DA67812AE7DC5300DD0684 /* IncomingTask.swift */,
+				B5DA67832AE7DE2000DD0684 /* TaskDateFormatter.swift */,
+				B5DA67852AE7E8E200DD0684 /* IncomingTasksObservable.swift */,
+				B5DA67872AE80B0A00DD0684 /* APNsData.swift */,
+				B5DA678A2AE8384000DD0684 /* TasksListObservable.swift */,
+				B51BF4572AEFD28C0066420F /* AppKeychain.swift */,
+				B51BF45F2AF002EB0066420F /* SecureTask.swift */,
+				B51BF4632AF010D70066420F /* SecureTasksListObservable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5AF94782AD962130035C214 /* TasksDBApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5AF948C2AD962130035C214 /* Build configuration list for PBXNativeTarget "TasksDBApp" */;
+			buildPhases = (
+				B5AF94752AD962130035C214 /* Sources */,
+				B5AF94762AD962130035C214 /* Frameworks */,
+				B5AF94772AD962130035C214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TasksDBApp;
+			packageProductDependencies = (
+				B5AF94982AD9B7C30035C214 /* Realm */,
+				B5AF949A2AD9B7C30035C214 /* RealmSwift */,
+				B51BF4552AEF46CF0066420F /* KeychainAccess */,
+			);
+			productName = TasksDBApp;
+			productReference = B5AF94792AD962130035C214 /* TasksDBApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5AF94712AD962130035C214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B5AF94782AD962130035C214 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B5AF94742AD962130035C214 /* Build configuration list for PBXProject "TasksDBApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5AF94702AD962120035C214;
+			packageReferences = (
+				B5AF94972AD9B7C30035C214 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				B51BF44F2AEF34E90066420F /* XCLocalSwiftPackageReference "AuthServer" */,
+				B51BF4542AEF46CF0066420F /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			productRefGroup = B5AF947A2AD962130035C214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5AF94782AD962130035C214 /* TasksDBApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5AF94772AD962130035C214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5AF94842AD962130035C214 /* Preview Assets.xcassets in Resources */,
+				B5AF94812AD962130035C214 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5AF94752AD962130035C214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DA67842AE7DE2000DD0684 /* TaskDateFormatter.swift in Sources */,
+				B5DA67862AE7E8E200DD0684 /* IncomingTasksObservable.swift in Sources */,
+				B5AF94A12ADD54DA0035C214 /* RealmTodoTask.swift in Sources */,
+				B5AF94892AD962130035C214 /* TasksDBApp.xcdatamodeld in Sources */,
+				B51BF45E2AF001CF0066420F /* SecureTaskListView.swift in Sources */,
+				B51BF4532AEF42BF0066420F /* LoginView.swift in Sources */,
+				B52FC4662AE3F77500198009 /* NotificationService.swift in Sources */,
+				B51BF4512AEF420E0066420F /* MainAppView.swift in Sources */,
+				B51BF45C2AF0005E0066420F /* KeychainService.swift in Sources */,
+				B5DA677B2AE4171200DD0684 /* AppDelegate.swift in Sources */,
+				B5AF94862AD962130035C214 /* CoreDataDBService.swift in Sources */,
+				B5DA677F2AE7DB8500DD0684 /* InboxView.swift in Sources */,
+				B5AF94AB2ADD945A0035C214 /* TaskDetailedView.swift in Sources */,
+				B51BF4602AF002EB0066420F /* SecureTask.swift in Sources */,
+				B5DA678B2AE8384000DD0684 /* TasksListObservable.swift in Sources */,
+				B51BF4622AF00E600066420F /* BiometricsService.swift in Sources */,
+				B5AF94B12ADE06150035C214 /* CoreDataTodoTaskExtension.swift in Sources */,
+				B52FC4692AE4152600198009 /* AppDelegateExtension.swift in Sources */,
+				B5AF94942AD96CDB0035C214 /* CoreDataDBServiceObjectContextProtocol.swift in Sources */,
+				B5AF94A52ADD5EB80035C214 /* GenericTodoTask.swift in Sources */,
+				B5AF947F2AD962130035C214 /* TaskListView.swift in Sources */,
+				B51BF4582AEFD28C0066420F /* AppKeychain.swift in Sources */,
+				B5AF94962AD973470035C214 /* GenericDBService.swift in Sources */,
+				B5AF947D2AD962130035C214 /* TasksDBAppApp.swift in Sources */,
+				B5AF94922AD96C140035C214 /* CoreDataDBServiceObjectContext.swift in Sources */,
+				B5DA67882AE80B0A00DD0684 /* APNsData.swift in Sources */,
+				B5AF949D2ADD52D00035C214 /* RealmDBService.swift in Sources */,
+				B5DA67822AE7DC5300DD0684 /* IncomingTask.swift in Sources */,
+				B51BF4642AF010D70066420F /* SecureTasksListObservable.swift in Sources */,
+				B51BF45A2AEFD54A0066420F /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B5AF948A2AD962130035C214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5AF948B2AD962130035C214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5AF948D2AD962130035C214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TasksDBApp/TasksDBApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TasksDBApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TasksDBApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.TasksDBApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5AF948E2AD962130035C214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TasksDBApp/TasksDBApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TasksDBApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TasksDBApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.TasksDBApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5AF94742AD962130035C214 /* Build configuration list for PBXProject "TasksDBApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AF948A2AD962130035C214 /* Debug */,
+				B5AF948B2AD962130035C214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5AF948C2AD962130035C214 /* Build configuration list for PBXNativeTarget "TasksDBApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AF948D2AD962130035C214 /* Debug */,
+				B5AF948E2AD962130035C214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B51BF44F2AEF34E90066420F /* XCLocalSwiftPackageReference "AuthServer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AuthServer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B51BF4542AEF46CF0066420F /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B5AF94972AD9B7C30035C214 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B51BF4552AEF46CF0066420F /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B51BF4542AEF46CF0066420F /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		B5AF94982AD9B7C30035C214 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5AF94972AD9B7C30035C214 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B5AF949A2AD9B7C30035C214 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5AF94972AD9B7C30035C214 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B5AF94872AD962130035C214 /* TasksDBApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5AF94882AD962130035C214 /* TasksDBApp.xcdatamodel */,
+			);
+			currentVersion = B5AF94882AD962130035C214 /* TasksDBApp.xcdatamodel */;
+			path = TasksDBApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B5AF94712AD962130035C214 /* Project object */;
+}
